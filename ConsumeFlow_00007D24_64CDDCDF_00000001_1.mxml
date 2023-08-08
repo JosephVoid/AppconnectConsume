@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageAssembly iib:parser="GENERICROOT" xmlns:iib="http://com.ibm.iib/lt/1.0">
+   <version xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">1</version>
+   <checkpoint>
+      <messageId xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">00007D24-64CDDCDF-00000001</messageId>
+      <propagationCount xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">1</propagationCount>
+      <nodeCallDepth xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="INTEGER">2</nodeCallDepth>
+      <timestamp xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="TIMESTAMP">2023-08-05 05:23:43.039001</timestamp>
+      <source>
+         <name xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">Poke API</name>
+         <identifier xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ConsumeFlow#FCMComposite_1_2</identifier>
+         <type xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ComIbmWSRequestNode</type>
+         <terminal xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">error</terminal>
+         <nodePath>
+            <application xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ConsumingAPI</application>
+            <messageFlow xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ConsumeFlow</messageFlow>
+            <node xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">Poke API</node>
+         </nodePath>
+         <inputNode xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="BOOLEAN">FALSE</inputNode>
+      </source>
+      <target>
+         <name xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">HTTP Reply1</name>
+         <identifier xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ConsumeFlow#FCMComposite_1_4</identifier>
+         <type xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ComIbmWSReplyNode</type>
+         <terminal xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">in</terminal>
+         <nodePath>
+            <application xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ConsumingAPI</application>
+            <messageFlow xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">ConsumeFlow</messageFlow>
+            <node xmlns:iib="http://com.ibm.iib/lt/1.0" iib:valueType="CHARACTER">HTTP Reply1</node>
+         </nodePath>
+      </target>
+   </checkpoint>
+   <environment/>
+   <localEnvironment xmlns:iib="http://com.ibm.iib/lt/1.0" iib:parser="MQROOT">
+      <Destination>
+         <HTTP>
+            <RequestIdentifier iib:valueType="BLOB">414d51204d7951756575654d616e6167a5a9bf64017d0540</RequestIdentifier>
+         </HTTP>
+      </Destination>
+      <WrittenDestination>
+         <HTTP>
+            <RequestURL iib:valueType="CHARACTER">https://pokeapi.co/api/v2/pokemo/</RequestURL>
+         </HTTP>
+      </WrittenDestination>
+      <Request>
+         <Response>
+            <Transport>
+               <HTTP>
+                  <ServerCertInfo>
+                     <ServerDN iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+                  </ServerCertInfo>
+               </HTTP>
+            </Transport>
+         </Response>
+      </Request>
+   </localEnvironment>
+   <exceptionList/>
+   <message xmlns:iib="http://com.ibm.iib/lt/1.0" iib:parser="WSRoot">
+      <Properties iib:parser="WSPROPERTYPARSER">
+         <MessageSet iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <MessageType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <MessageFormat iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <Encoding iib:valueType="INTEGER">546</Encoding>
+         <CodedCharSetId iib:valueType="INTEGER">1208</CodedCharSetId>
+         <Transactional iib:valueType="BOOLEAN">FALSE</Transactional>
+         <Persistence iib:valueType="BOOLEAN">FALSE</Persistence>
+         <CreationTime iib:valueType="GMTTIMESTAMP">2023-08-05 05:23:44.063999</CreationTime>
+         <ExpirationTime iib:valueType="INTEGER">-1</ExpirationTime>
+         <Priority iib:valueType="INTEGER">0</Priority>
+         <ReplyIdentifier iib:valueType="BLOB">000000000000000000000000000000000000000000000000</ReplyIdentifier>
+         <ReplyProtocol iib:valueType="CHARACTER">SOAP-HTTP</ReplyProtocol>
+         <Topic iib:elementType="0x03000000"/>
+         <ContentType iib:valueType="CHARACTER">text/plain; charset=UTF-8</ContentType>
+         <IdentitySourceType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourceToken iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourcePassword iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentitySourceIssuedBy iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedType iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedToken iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedPassword iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <IdentityMappedIssuedBy iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+      </Properties>
+      <HTTPResponseHeader iib:parser="WSRSPHDR">
+         <X-Original-HTTP-Status-Line iib:valueType="CHARACTER">HTTP/1.1 403 Forbidden</X-Original-HTTP-Status-Line>
+         <X-Original-HTTP-Status-Code iib:valueType="INTEGER">403</X-Original-HTTP-Status-Code>
+         <Date iib:valueType="CHARACTER">Sat, 05 Aug 2023 05:23:09 GMT</Date>
+         <Content-Type iib:valueType="CHARACTER">text/plain; charset=UTF-8</Content-Type>
+         <Content-Length iib:valueType="CHARACTER">16</Content-Length>
+         <Connection iib:valueType="CHARACTER">keep-alive</Connection>
+         <X-Frame-Options iib:valueType="CHARACTER">SAMEORIGIN</X-Frame-Options>
+         <Referrer-Policy iib:valueType="CHARACTER">same-origin</Referrer-Policy>
+         <Cache-Control iib:valueType="CHARACTER">private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0</Cache-Control>
+         <Expires iib:valueType="CHARACTER">Thu, 01 Jan 1970 00:00:01 GMT</Expires>
+         <Report-To iib:valueType="CHARACTER">{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=1G0qkuXftBYKr00%2B%2ByPT2JwfKIy3VCvO5C0qkZV38jbLYV4lQVgShCPXAAlH8U0e2TRUb8w41WZ9ih59KxnabtjotN2g0r3EnEUE2A2SgRxbjT2oj2dBVJhHDumw"}],"group":"cf-nel","max_age":604800}</Report-To>
+         <NEL iib:valueType="CHARACTER">{"success_fraction":0,"report_to":"cf-nel","max_age":604800}</NEL>
+         <Server iib:valueType="CHARACTER">cloudflare</Server>
+         <CF-RAY iib:valueType="CHARACTER">7f1c9b3d6b4041b9-MRS</CF-RAY>
+         <alt-svc iib:valueType="CHARACTER">h3=":443"; ma=86400</alt-svc>
+      </HTTPResponseHeader>
+      <BLOB iib:parser="none">
+         <UnknownParserName iib:elementType="0x03000000" iib:valueType="CHARACTER"/>
+         <BLOB iib:valueType="BLOB">6572726f7220636f64653a2031303130</BLOB>
+      </BLOB>
+   </message>
+</MessageAssembly>
