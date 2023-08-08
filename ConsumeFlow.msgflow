@@ -13,7 +13,7 @@
         <translation xmi:type="utility:ConstantString" string="Poke API Req"/>
       </nodes>
       <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="750,250">
-        <translation xmi:type="utility:ConstantString" string="HTTP Reply"/>
+        <translation xmi:type="utility:ConstantString" string="HTTP Success Reply"/>
       </nodes>
       <nodes xmi:type="ComIbmWSReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="756,116">
         <translation xmi:type="utility:ConstantString" string="HTTP Error Reply"/>
